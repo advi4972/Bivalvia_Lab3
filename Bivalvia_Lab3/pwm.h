@@ -10,7 +10,10 @@
 
 #include "msp.h"
 
-#define TICKS //DO MATH FOR TICKS (REFER TO LAB DOC)
+/*  MATH FOR TICKS: Where divider = 2
+ * (3*10^6)/(2^2) = 750000 |||| 750000*(500*10^-6) = 375 ticks ==> 0x177 in hex
+ */
+#define TICKS (0x177)
 
 void config_pwm_timer(void);
 
