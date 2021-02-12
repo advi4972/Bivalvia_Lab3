@@ -3,10 +3,10 @@
 
 
 void config_pwm_timer(void){
-    TIMER_A0->CTL |= TIMER_ACTL_TASSEL_2; //Chooses SMCLK as input clk
+    TIMER_A0->CTL |= TIMER_A_CTL_TASSEL_2; //Chooses SMCLK as input clk
 
     //SET DIVIDER VALUE
-    TIMER_A0->CTL |= TIMER_A_CTL_ID__2 ; //DIVIDE BY MASK FOR ID = 2
+    TIMER_A0->CTL |= TIMER_A_CTL_ID__1 ; //DIVIDE BY MASK FOR ID = 1
 
     //SET CCR VALUE BASED TO TICKS
     TIMER_A0->CCR[0] = TICKS ;//Limit value for clock
@@ -25,8 +25,8 @@ void stop_pwm(void){
 }
 
 void config_pwm_gpio(void){
-    P2->DIR |= BIT0; //sets p2.0 as output
-    P2->OUT &= ~BIT0; // sets bit0 to 0
+    P2->DIR |= BIT4; //sets p2.4 as output
+    P2->OUT &= ~BIT4; // sets bit4 to 0
 
     P2->SEL0 |= BIT4;
     P2->SEL1 &= ~BIT4;
