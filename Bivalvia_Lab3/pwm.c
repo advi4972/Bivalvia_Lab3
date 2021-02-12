@@ -15,10 +15,9 @@ void config_pwm_timer(void){
 }
 
 void start_pwm(void){
+    TIMER_A0->CCTL[1] |= TIMER_A_CCTLN_OUTMOD_7; //RESETS mode
+    TIMER_A0->CCTL[1] &= TIMER_A_CCTLN_OUTMOD_4; //SETS OUTPUT MODE TO TOGGLE
     TIMER_A0->CTL |= TIMER_A_CTL_MC_1; //Sets count mode to "UP"
-    TIMER_A0->CCTL[1] &= ~(TIMER_A_CCTLN_OUTMOD_7); //RESETS mode
-    TIMER_A0->CCTL[1] |= TIMER_A_CCTLN_OUTMOD_4; //SETS OUTPUT MODE TO TOGGLE
-
 }
 
 void stop_pwm(void){
@@ -26,5 +25,6 @@ void stop_pwm(void){
 }
 
 void config_pwm_gpio(void){
+
 
 }
