@@ -3,9 +3,6 @@
 .targetConfigs/
 .launches/
 .settings/
-.ccsproject
-.cproject
-.project
 dvt/
 Debug/
 Release/
@@ -15,9 +12,6 @@ Bivalvia_Lab3/.metadata/
 Bivalvia_Lab3/.targetConfigs/
 Bivalvia_Lab3/.launches
 Bivalvia_Lab3/.settings
-Bivalvia_Lab3/.ccsproject
-Bivalvia_Lab3/.cproject
-Bivalvia_Lab3/.project
 Bivalvia_Lab3/.gitignore
 Bivalvia_Lab3/dvt/
 Bivalvia_Lab3/RemoteSystemsTempFiles/
