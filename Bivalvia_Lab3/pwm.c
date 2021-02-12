@@ -25,6 +25,10 @@ void stop_pwm(void){
 }
 
 void config_pwm_gpio(void){
+    P2->DIR |= BIT0; //sets p2.0 as output
+    P2->OUT &= ~BIT0; // sets bit0 to 0
 
+    P2->SEL0 |= BIT4;
+    P2->SEL1 &= ~BIT4;
 
 }
