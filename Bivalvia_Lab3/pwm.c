@@ -29,6 +29,6 @@ void config_pwm_gpio(void){
     P2->OUT &= ~BIT0; // sets bit0 to 0
 
     P2->SEL0 |= BIT4;
-    P2->SEL1 &= ~BIT4;
+    P2->SEL1 &= ~BIT4; //added stuff
 
 }
