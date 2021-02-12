@@ -3,9 +3,9 @@
 .targetConfigs/
 .launches/
 dvt/
+RemoteSystemsTempFiles/
 Debug/
 Release/
-RemoteSystemsTempFiles/
 Bivalvia_Lab3/.jxbrowser-data/
 Bivalvia_Lab3/.metadata/
 Bivalvia_Lab3/.launches
