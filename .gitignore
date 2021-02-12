@@ -2,7 +2,6 @@
 .metadata/
 .targetConfigs/
 .launches/
-.settings/
 dvt/
 Debug/
 Release/
@@ -13,5 +12,5 @@ Bivalvia_Lab3/.launches
 Bivalvia_Lab3/.gitignore
 Bivalvia_Lab3/dvt/
 Bivalvia_Lab3/RemoteSystemsTempFiles/
-Bivalvia_Lab3/Debug/
-Bivalvia_Lab3/Release/
+Debug/
+Release/
